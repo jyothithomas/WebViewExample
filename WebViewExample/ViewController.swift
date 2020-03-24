@@ -29,6 +29,10 @@ class ViewController: UIViewController {
                 for item in historyList {
                     print("\(String(describing: item.title)) -  \(item.url.absoluteURL)")
                 }
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let historyTableVC = sb.instantiateViewController(identifier: "historyTableVC") as! HistoryTableViewController
+        historyTableVC.historyList = self.history
+        navigationController?.pushViewController(historyTableVC, animated: true)
             }
         }
     }
