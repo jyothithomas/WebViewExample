@@ -50,6 +50,13 @@ class ViewController: UIViewController {
             {
                 print("Can't Go back")
             }
+        case 2: // Next Button is pressed
+            if myWebKitView.canGoForward
+            {
+               print("Go Next")
+               myWebKitView.goNext()
+            }
+        case 3: 
         default:
             print("No Navigation action found...")
         }
