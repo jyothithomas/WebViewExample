@@ -61,7 +61,7 @@ class ViewController: UIViewController {
                 print("Can't Go Next")
             }
          case 3: //Refresh button is pressed
-            myWebKitView.reload()
+            myWebKitView.reloadFromOrigin()
         default:
             print("No Navigation action found...")
         }
