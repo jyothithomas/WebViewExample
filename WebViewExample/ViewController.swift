@@ -47,7 +47,13 @@ class ViewController: UIViewController {
     }
     
     
-
+ //Use Safari View Controller to open web link
+     @IBAction func watchNowUsingSafari(_ sender: UIBarButtonItem)
+    {
+        let videoUrl = URL(string: "https://www.youtube.com/watch?v=gnjXbR2eNDE")
+        let safariVC = SFSafariViewController(url: videoUrl!)
+        self.present(safariVC, animated: true, completion: nil)
+    }
     @IBAction func btnNavigation(_ sender: UIBarButtonItem)
     {
         switch sender.tag {
