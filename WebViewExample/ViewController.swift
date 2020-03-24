@@ -54,9 +54,14 @@ class ViewController: UIViewController {
             if myWebKitView.canGoForward
             {
                print("Go Next")
-               myWebKitView.goNext()
+                myWebKitView.goForward()
             }
-        case 3: 
+            else 
+            {
+                print("Can't Go Next")
+            }
+         case 3: //Refresh button is pressed
+            myWebKitView.reload()
         default:
             print("No Navigation action found...")
         }
