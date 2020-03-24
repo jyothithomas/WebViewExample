@@ -57,7 +57,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="w33-U0-OcH">
+                     <navigationItem key="navigationItem" id="w33-U0-OcH">
+                        <barButtonItem key="leftBarButtonItem" title="Show Safari" id="yR4-O8-asm">
+                            <connections>
+                                <action selector="watchNowUsingSafari:" destination="BYZ-38-t0r" id="aDG-uP-haf"/>
+                            </connections>
+                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="History" id="Slo-Bg-yjW"/>
                     </navigationItem>
                     <connections>
